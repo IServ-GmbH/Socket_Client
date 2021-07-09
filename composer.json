@@ -11,28 +11,88 @@
             "role": "lead"
         }
     ],
-    "version": "2.1.4",
+    "version": "102",
     "time": "2020-03-12",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Crypt_Blowfish"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Exception"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Imap_Client"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Idna"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/ListHeaders"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Mail"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Mime"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Secret"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Socket_Client"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Stream"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Stream_Filter"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Stream_Wrapper"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/String"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Support"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Text_Flowed"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Translation"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/IServ-GmbH/Util"
         }
     ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2"
+        "php": ">=7.3",
+        "horde/exception": "102"
     },
     "suggest": {
         "ext-openssl": "*"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Socket_Client": "2.*",
-        "pear-horde/Horde_Socket_Client": "2.*"
-    },
     "autoload": {
-        "psr-0": {
-            "Horde_Socket_Client": "lib/"
+        "psr-4": {
+            "Horde\\Socket\\": "lib/Horde/Socket"
         }
     }
 }

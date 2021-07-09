@@ -11,28 +11,18 @@
             "role": "lead"
         }
     ],
-    "version": "2.1.4",
+    "version": "103",
     "time": "2020-03-12",
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
-    ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2"
+        "php": ">=7.3",
+        "horde/exception": "103"
     },
     "suggest": {
         "ext-openssl": "*"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Socket_Client": "2.*",
-        "pear-horde/Horde_Socket_Client": "2.*"
-    },
     "autoload": {
-        "psr-0": {
-            "Horde_Socket_Client": "lib/"
+        "psr-4": {
+            "Horde\\Socket\\": "lib/Horde/Socket"
         }
     }
 }
